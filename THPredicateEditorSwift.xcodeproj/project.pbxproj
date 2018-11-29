@@ -11,6 +11,10 @@
 		03D6C5A321AFEC15007B0EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5A221AFEC15007B0EE0 /* Assets.xcassets */; };
 		03D6C5A621AFEC15007B0EE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5A421AFEC15007B0EE0 /* MainMenu.xib */; };
 		03D6C5B221AFEC15007B0EE0 /* THPredicateEditorSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5B121AFEC15007B0EE0 /* THPredicateEditorSwiftUITests.swift */; };
+		03D6C5BD21AFEC46007B0EE0 /* THDepartmentsRowTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5BC21AFEC46007B0EE0 /* THDepartmentsRowTemplate.swift */; };
+		03D6C5C121AFEC5C007B0EE0 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5BE21AFEC5B007B0EE0 /* MainWindowController.swift */; };
+		03D6C5C221AFEC5C007B0EE0 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5BF21AFEC5B007B0EE0 /* MainWindowController.xib */; };
+		03D6C5C321AFEC5C007B0EE0 /* NSPredicateEditorRowTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5C021AFEC5B007B0EE0 /* NSPredicateEditorRowTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,10 @@
 		03D6C5AD21AFEC15007B0EE0 /* THPredicateEditorSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THPredicateEditorSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D6C5B121AFEC15007B0EE0 /* THPredicateEditorSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THPredicateEditorSwiftUITests.swift; sourceTree = "<group>"; };
 		03D6C5B321AFEC15007B0EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D6C5BC21AFEC46007B0EE0 /* THDepartmentsRowTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THDepartmentsRowTemplate.swift; sourceTree = "<group>"; };
+		03D6C5BE21AFEC5B007B0EE0 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		03D6C5BF21AFEC5B007B0EE0 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		03D6C5C021AFEC5B007B0EE0 /* NSPredicateEditorRowTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPredicateEditorRowTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +86,11 @@
 				03D6C5A221AFEC15007B0EE0 /* Assets.xcassets */,
 				03D6C5A421AFEC15007B0EE0 /* MainMenu.xib */,
 				03D6C5A721AFEC15007B0EE0 /* Info.plist */,
+				03D6C5BC21AFEC46007B0EE0 /* THDepartmentsRowTemplate.swift */,
 				03D6C5A821AFEC15007B0EE0 /* THPredicateEditorSwift.entitlements */,
+				03D6C5BE21AFEC5B007B0EE0 /* MainWindowController.swift */,
+				03D6C5BF21AFEC5B007B0EE0 /* MainWindowController.xib */,
+				03D6C5C021AFEC5B007B0EE0 /* NSPredicateEditorRowTemplate.swift */,
 			);
 			path = THPredicateEditorSwift;
 			sourceTree = "<group>";
@@ -174,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D6C5A321AFEC15007B0EE0 /* Assets.xcassets in Resources */,
+				03D6C5C221AFEC5C007B0EE0 /* MainWindowController.xib in Resources */,
 				03D6C5A621AFEC15007B0EE0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,7 +205,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D6C5BD21AFEC46007B0EE0 /* THDepartmentsRowTemplate.swift in Sources */,
 				03D6C5A121AFEC12007B0EE0 /* AppDelegate.swift in Sources */,
+				03D6C5C321AFEC5C007B0EE0 /* NSPredicateEditorRowTemplate.swift in Sources */,
+				03D6C5C121AFEC5C007B0EE0 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
