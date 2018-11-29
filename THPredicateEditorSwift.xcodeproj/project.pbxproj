@@ -15,6 +15,7 @@
 		03D6C5C121AFEC5C007B0EE0 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5BE21AFEC5B007B0EE0 /* MainWindowController.swift */; };
 		03D6C5C221AFEC5C007B0EE0 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5BF21AFEC5B007B0EE0 /* MainWindowController.xib */; };
 		03D6C5C321AFEC5C007B0EE0 /* NSPredicateEditorRowTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5C021AFEC5B007B0EE0 /* NSPredicateEditorRowTemplate.swift */; };
+		03D6C5C621AFEFD9007B0EE0 /* Capture.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5C521AFEFD9007B0EE0 /* Capture.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		03D6C5BE21AFEC5B007B0EE0 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		03D6C5BF21AFEC5B007B0EE0 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 		03D6C5C021AFEC5B007B0EE0 /* NSPredicateEditorRowTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPredicateEditorRowTemplate.swift; sourceTree = "<group>"; };
+		03D6C5C521AFEFD9007B0EE0 /* Capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Capture.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		03D6C59421AFEC12007B0EE0 = {
 			isa = PBXGroup;
 			children = (
+				03D6C5C421AFEFC7007B0EE0 /* Picture */,
 				03D6C59F21AFEC12007B0EE0 /* THPredicateEditorSwift */,
 				03D6C5B021AFEC15007B0EE0 /* THPredicateEditorSwiftUITests */,
 				03D6C59E21AFEC12007B0EE0 /* Products */,
@@ -102,6 +105,14 @@
 				03D6C5B321AFEC15007B0EE0 /* Info.plist */,
 			);
 			path = THPredicateEditorSwiftUITests;
+			sourceTree = "<group>";
+		};
+		03D6C5C421AFEFC7007B0EE0 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				03D6C5C521AFEFD9007B0EE0 /* Capture.png */,
+			);
+			path = Picture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D6C5A321AFEC15007B0EE0 /* Assets.xcassets in Resources */,
+				03D6C5C621AFEFD9007B0EE0 /* Capture.png in Resources */,
 				03D6C5C221AFEC5C007B0EE0 /* MainWindowController.xib in Resources */,
 				03D6C5A621AFEC15007B0EE0 /* MainMenu.xib in Resources */,
 			);
