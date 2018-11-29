@@ -12,8 +12,9 @@ extension NSPredicateEditorRowTemplate {
     
     convenience init( compoundTypes: [NSCompoundPredicate.LogicalType] ) {
         
-        var compoundTypesNSNumber = [NSNumber]()
-        for c in compoundTypes { compoundTypesNSNumber.append( NSNumber(value: c.rawValue) ) }
+        let compoundTypesNSNumber = (0..<compoundTypes.count).map { (i) -> NSNumber in
+            return NSNumber(value: compoundTypes[i].rawValue)
+        }
         self.init( compoundTypes: compoundTypesNSNumber )
     }
     

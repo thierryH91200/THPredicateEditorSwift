@@ -79,7 +79,6 @@ final class MainWindowController: NSWindowController {
         predicateEditor.rowTemplates = [compound, firstNameRowTemplate, lastNameRowTemplate, ageTemplate, dateOfBirthTemplate, countryTemplate, departmentCustomRowTemplate, boolTemplate]
         predicate = NSPredicate(format:DEFAULT_PREDICATE)
         predicateEditor.objectValue = predicate
-
     }
     
     @IBAction func generateQuery(_ sender: Any) {
