@@ -40,7 +40,7 @@ final class MainWindowController: NSWindowController {
         arrayPerson.append(Person(firstName: "Mary", lastName: "Doe", dateOfBirth: Date(), age: 27, department: "Finance", country: "United States", isBool: true))
         arrayPerson.append(Person(firstName: "Leo", lastName: "Doe", dateOfBirth: Date(), age: 28, department: "Finance", country: "Mexico", isBool: false))
         arrayPerson.append(Person(firstName: "John", lastName: "Doe", dateOfBirth: Date(), age: 29, department: "Finance", country: "United States", isBool: true))
-        arrayPerson.append(Person(firstName: "John", lastName: "Doe", dateOfBirth: Date(), age: 30, department: "Finance", country: "Brazil", isBool: false))
+        arrayPerson.append(Person(firstName: "John", lastName: "Leo", dateOfBirth: Date(), age: 30, department: "Finance", country: "Brazil", isBool: false))
     }
     
     func addRowPredicateEditor() {

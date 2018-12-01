@@ -24,7 +24,6 @@ extension NSPredicateEditorRowTemplate {
         let keyPaths: [NSExpression] = [NSExpression(forKeyPath: keyPath)]
         var constantValues: [NSExpression] = []
         for v in values {
-            
             constantValues.append( NSExpression(forConstantValue: v) )
         }
         
