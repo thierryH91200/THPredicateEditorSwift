@@ -1,0 +1,93 @@
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "18l-IU-O44"; */
+"18l-IU-O44.title" = "Table View Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "First Name"; ObjectID = "1ar-9e-exu"; */
+"1ar-9e-exu.headerCell.title" = "First Name";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "1vh-yu-OVR"; */
+"1vh-yu-OVR.title" = "Table View Cell";
+
+/* Class = "NSMenuItem"; title = "All"; ObjectID = "DpQ-C1-zmL"; */
+"DpQ-C1-zmL.title" = "All";
+
+/* Class = "NSMenuItem"; title = "is less than or equal to"; ObjectID = "Euo-YJ-Vng"; */
+"Euo-YJ-Vng.title" = "is less than or equal to";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "address"; ObjectID = "FxM-di-qqY"; */
+"FxM-di-qqY.title" = "address";
+
+/* Class = "NSMenuItem"; title = "is"; ObjectID = "IOU-Rs-NUz"; */
+"IOU-Rs-NUz.title" = "is";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "LF7-PG-XBY"; */
+"LF7-PG-XBY.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "is greater than or equal to"; ObjectID = "Ltq-dr-k9h"; */
+"Ltq-dr-k9h.title" = "is greater than or equal to";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "NDn-GT-Pcw"; */
+"NDn-GT-Pcw.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "O2t-0w-wWO"; */
+"O2t-0w-wWO.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "OjV-f9-gLz"; */
+"OjV-f9-gLz.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "SVf-vn-cTS"; */
+"SVf-vn-cTS.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Bool"; ObjectID = "V9X-GB-ess"; */
+"V9X-GB-ess.headerCell.title" = "Bool";
+
+/* Class = "NSMenuItem"; title = "of the following are true"; ObjectID = "aTU-4Y-hRj"; */
+"aTU-4Y-hRj.title" = "of the following are true";
+
+/* Class = "NSTableColumn"; headerCell.title = "Last Name"; ObjectID = "dsE-GV-7xT"; */
+"dsE-GV-7xT.headerCell.title" = "Last Name";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "egi-gk-OfK"; */
+"egi-gk-OfK.title" = "Table View Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Date Of Birth"; ObjectID = "gOm-ad-o1R"; */
+"gOm-ad-o1R.headerCell.title" = "Date Of Birth";
+
+/* Class = "NSTableColumn"; headerCell.title = "Department"; ObjectID = "gzN-AM-Awl"; */
+"gzN-AM-Awl.headerCell.title" = "Department";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "hxv-Kb-TV0"; */
+"hxv-Kb-TV0.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "kS2-kW-frd"; */
+"kS2-kW-frd.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Date"; ObjectID = "kZG-lO-PZv"; */
+"kZG-lO-PZv.title" = "Date";
+
+/* Class = "NSButtonCell"; title = "Generate Query"; ObjectID = "oHs-Yl-aqN"; */
+"oHs-Yl-aqN.title" = "Generate Query";
+
+/* Class = "NSMenuItem"; title = "Any"; ObjectID = "ppk-uy-nIf"; */
+"ppk-uy-nIf.title" = "Any";
+
+/* Class = "NSMenuItem"; title = "sign"; ObjectID = "uLq-Eb-Xtm"; */
+"uLq-Eb-Xtm.title" = "sign";
+
+/* Class = "NSTableColumn"; headerCell.title = "Country"; ObjectID = "uu8-SL-s9e"; */
+"uu8-SL-s9e.headerCell.title" = "Country";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "v2r-ma-de2"; */
+"v2r-ma-de2.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Age"; ObjectID = "vMr-Kl-OxF"; */
+"vMr-Kl-OxF.headerCell.title" = "Age";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "yR5-1m-x0K"; */
+"yR5-1m-x0K.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "zYu-ab-r1z"; */
+"zYu-ab-r1z.title" = "Text Cell";

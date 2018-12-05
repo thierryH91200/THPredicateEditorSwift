@@ -33,6 +33,7 @@ final class THDepartmentsRowTemplate: NSPredicateEditorRowTemplate {
     
     func validationView() -> NSView? {
         let view = NSView(frame: NSMakeRect(0, 0, 400, 22.0))
+        
         let button = NSButton(frame: NSMakeRect(0.0, 2.0, 70.0, 18.0))
         button.title = "Validate"
         button.target = self

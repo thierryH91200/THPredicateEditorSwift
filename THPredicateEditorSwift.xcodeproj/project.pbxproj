@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0306C56121B7C995000F27A4 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0306C56321B7C995000F27A4 /* MainWindowController.xib */; };
 		03D6C5A121AFEC12007B0EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5A021AFEC12007B0EE0 /* AppDelegate.swift */; };
 		03D6C5A321AFEC15007B0EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5A221AFEC15007B0EE0 /* Assets.xcassets */; };
 		03D6C5A621AFEC15007B0EE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5A421AFEC15007B0EE0 /* MainMenu.xib */; };
 		03D6C5B221AFEC15007B0EE0 /* THPredicateEditorSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5B121AFEC15007B0EE0 /* THPredicateEditorSwiftUITests.swift */; };
 		03D6C5BD21AFEC46007B0EE0 /* THDepartmentsRowTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5BC21AFEC46007B0EE0 /* THDepartmentsRowTemplate.swift */; };
 		03D6C5C121AFEC5C007B0EE0 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5BE21AFEC5B007B0EE0 /* MainWindowController.swift */; };
-		03D6C5C221AFEC5C007B0EE0 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5BF21AFEC5B007B0EE0 /* MainWindowController.xib */; };
 		03D6C5C321AFEC5C007B0EE0 /* NSPredicateEditorRowTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5C021AFEC5B007B0EE0 /* NSPredicateEditorRowTemplate.swift */; };
 		03D6C5C621AFEFD9007B0EE0 /* Capture.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5C521AFEFD9007B0EE0 /* Capture.png */; };
 /* End PBXBuildFile section */
@@ -29,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0306C56021B7C4AF000F27A4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		0306C56221B7C995000F27A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindowController.xib; sourceTree = "<group>"; };
+		0306C56521B7C99A000F27A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainWindowController.strings; sourceTree = "<group>"; };
+		0306C56721B7C99B000F27A4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainWindowController.strings; sourceTree = "<group>"; };
+		0306C56921B7CAC7000F27A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		03D6C59D21AFEC12007B0EE0 /* THPredicateEditorSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THPredicateEditorSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D6C5A021AFEC12007B0EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D6C5A221AFEC15007B0EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,7 +45,6 @@
 		03D6C5B321AFEC15007B0EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03D6C5BC21AFEC46007B0EE0 /* THDepartmentsRowTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THDepartmentsRowTemplate.swift; sourceTree = "<group>"; };
 		03D6C5BE21AFEC5B007B0EE0 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
-		03D6C5BF21AFEC5B007B0EE0 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 		03D6C5C021AFEC5B007B0EE0 /* NSPredicateEditorRowTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPredicateEditorRowTemplate.swift; sourceTree = "<group>"; };
 		03D6C5C521AFEFD9007B0EE0 /* Capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Capture.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -92,7 +96,7 @@
 				03D6C5BC21AFEC46007B0EE0 /* THDepartmentsRowTemplate.swift */,
 				03D6C5A821AFEC15007B0EE0 /* THPredicateEditorSwift.entitlements */,
 				03D6C5BE21AFEC5B007B0EE0 /* MainWindowController.swift */,
-				03D6C5BF21AFEC5B007B0EE0 /* MainWindowController.xib */,
+				0306C56321B7C995000F27A4 /* MainWindowController.xib */,
 				03D6C5C021AFEC5B007B0EE0 /* NSPredicateEditorRowTemplate.swift */,
 			);
 			path = THPredicateEditorSwift;
@@ -179,6 +183,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 03D6C59421AFEC12007B0EE0;
 			productRefGroup = 03D6C59E21AFEC12007B0EE0 /* Products */;
@@ -198,7 +203,7 @@
 			files = (
 				03D6C5A321AFEC15007B0EE0 /* Assets.xcassets in Resources */,
 				03D6C5C621AFEFD9007B0EE0 /* Capture.png in Resources */,
-				03D6C5C221AFEC5C007B0EE0 /* MainWindowController.xib in Resources */,
+				0306C56121B7C995000F27A4 /* MainWindowController.xib in Resources */,
 				03D6C5A621AFEC15007B0EE0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,10 +248,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0306C56321B7C995000F27A4 /* MainWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0306C56221B7C995000F27A4 /* Base */,
+				0306C56521B7C99A000F27A4 /* en */,
+				0306C56721B7C99B000F27A4 /* fr */,
+			);
+			name = MainWindowController.xib;
+			sourceTree = "<group>";
+		};
 		03D6C5A421AFEC15007B0EE0 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				03D6C5A521AFEC15007B0EE0 /* Base */,
+				0306C56021B7C4AF000F27A4 /* fr */,
+				0306C56921B7CAC7000F27A4 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -258,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -319,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
