@@ -1,0 +1,49 @@
+
+/*
+ Predicate.strings
+ THPredicateEditorSwift
+ 
+ Created by thierryH24 on 21/04/2018.
+ Copyright © 2018 thierryH24. All rights reserved.
+ */
+
+// MARK: - Document
+
+"%[Any]@ of the following are true" = "%[Any]@ of the following are true";
+"%[All]@ of the following are true" = "%[All]@ of the following are true";
+"%[None]@ of the following are true" = "%[None]@ of the following are true";
+
+"firstname" = "firstname";
+"%[firstName]@ %[is]@ %@" = "%1$[firstName]@ %2$[is]@ %3$@";
+"%[firstName]@ %[is not]@ %@" = "%1$[firstName]@ %2$[is not]@ %3$@";
+
+"lastName" = "lastName";
+"%[lastName]@ %[is]@ %@" = "%1$[lastName]@ %2$[is]@ %3$@";
+"%[lastName]@ %[is not]@ %@" = "%1$[lastName]@ %2$[is not]@ %3$@";
+
+"country" = "Country";
+"%[country]@ %[is]@ %[Mexico]@" = "%1$[country]@ %2$[is]@ %3$[Mexico]@";
+"%[country]@ %[is]@ %[Canada]@" = "%1$[country]@ %2$[is]@ %3$[Canada]@";
+"%[country]@ %[is]@ %[Brazil]@" = "%1$[country]@ %2$[is]@ %3$[Brazil]@";
+"%[country]@ %[is]@ %[United States]@" = "%1$[country]@ %2$[is]@ %3$[United States]@";
+
+"%[country]@ %[is not]@ %[Mexico]@" = "%1$[country]@ %2$[is not]@ %3$[Mexico]@";
+"%[country]@ %[is not]@ %[Canada]@" = "%1$[country]@ %2$[is not]@ %3$[Canada]@";
+"%[country]@ %[is not]@ %[Brazil]@" = "%1$[country]@ %2$[is not]@ %3$[Brazil]@";
+"%[country]@ %[is not]@ %[United States]@" = "%1$[country]@ %2$[is not]@ %3$[United States]@";
+
+"%[age]@ %[is]@ %@" = "%1$[age]@ %2$[is]@ %3$@";
+"%[age]@ %[is not]@ %@" = "%1$[age]@ %2$[is not]@ %3$@";
+"%[age]@ %[is less than]@ %@" = "%1$[age]@ %2$[is less than]@ %3$@";
+"%[age]@ %[is less than or equal to]@ %@" = "%1$[age]@ %2$[is less than or equal to]@ %3$@";
+"%[age]@ %[is greater than]@ %@" = "%1$[age]@ %2$[eis greater thane]@ %3$@";
+"%[age]@ %[is greater than or equal to]@ %@" = "%1$[age]@ %2$[is greater than or equal to]@ %3$@";
+
+"%[dateOfBirth]@ %[is]@ %@" = "%1$[dateOfBirth]@ %2$[is]@ %3$@";
+"%[dateOfBirth]@ %[is less than]@ %@" = "%1$[dateOfBirth]@ %2$[is less than]@ %3$@";
+"%[dateOfBirth]@ %[is less than or equal to]@ %@" = "%1$[dateOfBirth]@ %2$[is less than or equal to]@ %3$@";
+"%[dateOfBirth]@ %[is greater than]@ %@" = "%1$[dateOfBirth]@ %2$[is greater than]@ %3$@";
+"%[dateOfBirth]@ %[is greater than or equal to]@ %@" = "%1$[dateOfBirth]@ %2$[is greater than or equal to]@ %3$@";
+
+"%[Department]@ %[is]@ %[Human Resources]@ %[Validate@ %[custom]@" = "%1$[Department]@ %2$[is]@ %3$[Human Resources]@ %4$[Human Resources]@ %5$[custom]@";
+//"%[department]@ %[is not]@ %[Human Resources]@" = "%1$[department]@ %2$[is not]@ %3$[Human Resources]@";

@@ -19,7 +19,7 @@ final class MainWindowController: NSWindowController {
         
     @objc dynamic var arrayPerson = [Person]()
     
-    let DEFAULT_PREDICATE = "firstName ==[cd] 'John' OR lastName ==[cd] 'doe' OR (dateOfBirth <= CAST('11/18/2018 00:00', 'NSDate') AND dateOfBirth >= CAST('01/01/2018', 'NSDate')) OR department == 'Human Resources' OR country ==[cd] 'United States' OR age > 25"
+    let DEFAULT_PREDICATE = "firstName ==[cd] 'John' OR lastName ==[cd] 'doe' OR (dateOfBirth <= CAST('11/18/2018 00:00', 'NSDate') AND dateOfBirth >= CAST('01/01/2018', 'NSDate')) OR department == 'Human Resources' OR country ==[cd] 'United States' OR age = 25"
 
     override var windowNibName: NSNib.Name? {
         return NSNib.Name( "MainWindowController")
@@ -63,7 +63,7 @@ final class MainWindowController: NSWindowController {
         let dateOfBirthTemplate = NSPredicateEditorRowTemplate(DateCompareForKeyPaths: ["dateOfBirth"] , operators: operators)
         
         // Custom
-        let leftExpressions = [NSExpression(forKeyPath: "department")]
+        let leftExpressions = [NSExpression(forKeyPath: "Department")]
         let departmentCustomRowTemplate = THDepartmentsRowTemplate(leftExpressions: leftExpressions)
         
         // Constant values
@@ -74,6 +74,12 @@ final class MainWindowController: NSWindowController {
         // Bool
         operators = [.equalTo, .notEqualTo]
         let boolTemplate = NSPredicateEditorRowTemplate( BoolCompareForKeyPaths: ["isBool"], operators: operators )
+        
+        
+        let stringsFile = Bundle.main.path(forResource: "Predicate", ofType: "strings")
+        let strings = try? String(contentsOfFile: stringsFile ?? "", encoding: .utf16)
+        let formattingDictionary = strings?.propertyListFromStringsFileFormat()
+        predicateEditor.formattingDictionary = formattingDictionary
         
         // Feed predicateEditor
         predicateEditor.rowTemplates = [compound, firstNameRowTemplate, lastNameRowTemplate, ageTemplate, dateOfBirthTemplate, countryTemplate, departmentCustomRowTemplate, boolTemplate]

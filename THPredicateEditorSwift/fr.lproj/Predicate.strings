@@ -1,0 +1,49 @@
+
+/*
+ Localizable.strings
+ ComptaGraphVa
+ 
+ Created by thierryH24 on 21/04/2018.
+ Copyright © 2018 thierryH24. All rights reserved.
+ */
+
+// MARK: - Document
+
+"%[Any]@ of the following are true" = "%[Une]@ des conditions suivantes est vraie";
+"%[All]@ of the following are true" = "%[Toutes]@ les conditions sont vraies";
+"%[None]@ of the following are true" = "%[Aucune]@ des conditions suivantes n'est vraie";
+
+"firstname" = "nom";
+"%[firstName]@ %[is]@ %@" = "%1$[nom]@ %2$[est]@ %3$@";
+"%[firstName]@ %[is not]@ %@" = "%1$[nom]@ %2$[n'est pas]@ %3$@";
+
+"lastName" = "prenom";
+"%[lastName]@ %[is]@ %@" = "%1$[prenom]@ %2$[est]@ %3$@";
+"%[lastName]@ %[is not]@ %@" = "%1$[prenom]@ %2$[n'est pas]@ %3$@";
+
+"country" = "Pays";
+"%[country]@ %[is]@ %[Mexico]@" = "%1$[Pays]@ %2$[est]@ %3$[Mexique]@";
+"%[country]@ %[is]@ %[Canada]@" = "%1$[Pays]@ %2$[est]@ %3$[Canada]@";
+"%[country]@ %[is]@ %[Brazil]@" = "%1$[Pays]@ %2$[est]@ %3$[Bresil]@";
+"%[country]@ %[is]@ %[United States]@" = "%1$[Pays]@ %2$[est]@ %3$[Etats Unis]@";
+
+"%[country]@ %[is not]@ %[Mexico]@" = "%1$[Pays]@ %2$[n'est past]@ %3$[Mexique]@";
+"%[country]@ %[is not]@ %[Canada]@" = "%1$[Pays]@ %2$[n'est pas]@ %3$[Canada]@";
+"%[country]@ %[is not]@ %[Brazil]@" = "%1$[Pays]@ %2$[n'est pas]@ %3$[Bresil]@";
+"%[country]@ %[is not]@ %[United States]@" = "%1$[Pays]@ %2$[n'est pas]@ %3$[Etats Unis]@";
+
+"%[age]@ %[is]@ %@" = "%1$[age]@ %2$[est égal à]@ %3$@";
+"%[age]@ %[is not]@ %@" = "%1$[age]@ %2$[n'est pas égal à]@ %3$@";
+"%[age]@ %[is less than]@ %@" = "%1$[age]@ %2$[est plus petit que]@ %3$@";
+"%[age]@ %[is less than or equal to]@ %@" = "%1$[age]@ %2$[est plus petit ou égal à]@ %3$@";
+"%[age]@ %[is greater than]@ %@" = "%1$[age]@ %2$[est plus grand que]@ %3$@";
+"%[age]@ %[is greater than or equal to]@ %@" = "%1$[age]@ %2$[est plus grand ou égal à]@ %3$@";
+
+"%[dateOfBirth]@ %[is]@ %@" = "%1$[dateOfBirth]@ %2$[est]@ %3$@";
+"%[dateOfBirth]@ %[is less than]@ %@" = "%1$[dateOfBirth]@ %2$[est plus petite que]@ %3$@";
+"%[dateOfBirth]@ %[is less than or equal to]@ %@" = "%1$[dateOfBirth]@ %2$[est plus petit ou égal à]@ %3$@";
+"%[dateOfBirth]@ %[is greater than]@ %@" = "%1$[dateOfBirth]@ %2$[est plus grand que]@ %3$@";
+"%[dateOfBirth]@ %[is greater than or equal to]@ %@" = "%1$[dateOfBirth]@ %2$[est plus grand ou égal à]@ %3$@";
+
+"%[Department]@ %[is]@ %[Human Resources]@" = "%1$[Department]@ %2$[est]@ %3$[Resources Humaines]@";
+//"%[department]@ %[is not]@ %[Human Resources]@" = "%1$[département]@ %2$[is not]@ %3$[Resources Humaines]@";

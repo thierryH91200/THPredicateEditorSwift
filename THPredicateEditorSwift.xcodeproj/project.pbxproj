@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0306C56121B7C995000F27A4 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0306C56321B7C995000F27A4 /* MainWindowController.xib */; };
+		0367938821B9451C0093A82F /* Predicate.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0367938A21B9451C0093A82F /* Predicate.strings */; };
+		0367938E21B948B60093A82F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0367939021B948B60093A82F /* Localizable.strings */; };
 		03D6C5A121AFEC12007B0EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D6C5A021AFEC12007B0EE0 /* AppDelegate.swift */; };
 		03D6C5A321AFEC15007B0EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5A221AFEC15007B0EE0 /* Assets.xcassets */; };
 		03D6C5A621AFEC15007B0EE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D6C5A421AFEC15007B0EE0 /* MainMenu.xib */; };
@@ -33,7 +35,11 @@
 		0306C56221B7C995000F27A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindowController.xib; sourceTree = "<group>"; };
 		0306C56521B7C99A000F27A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainWindowController.strings; sourceTree = "<group>"; };
 		0306C56721B7C99B000F27A4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainWindowController.strings; sourceTree = "<group>"; };
-		0306C56921B7CAC7000F27A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		0306C56D21B8191D000F27A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		0367938921B9451C0093A82F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Predicate.strings; sourceTree = "<group>"; };
+		0367938B21B9451E0093A82F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Predicate.strings; sourceTree = "<group>"; };
+		0367938F21B948B60093A82F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0367939121B948B90093A82F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03D6C59D21AFEC12007B0EE0 /* THPredicateEditorSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THPredicateEditorSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D6C5A021AFEC12007B0EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D6C5A221AFEC15007B0EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +101,8 @@
 				03D6C5A721AFEC15007B0EE0 /* Info.plist */,
 				03D6C5BC21AFEC46007B0EE0 /* THDepartmentsRowTemplate.swift */,
 				03D6C5A821AFEC15007B0EE0 /* THPredicateEditorSwift.entitlements */,
+				0367939021B948B60093A82F /* Localizable.strings */,
+				0367938A21B9451C0093A82F /* Predicate.strings */,
 				03D6C5BE21AFEC5B007B0EE0 /* MainWindowController.swift */,
 				0306C56321B7C995000F27A4 /* MainWindowController.xib */,
 				03D6C5C021AFEC5B007B0EE0 /* NSPredicateEditorRowTemplate.swift */,
@@ -201,6 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0367938821B9451C0093A82F /* Predicate.strings in Resources */,
+				0367938E21B948B60093A82F /* Localizable.strings in Resources */,
 				03D6C5A321AFEC15007B0EE0 /* Assets.xcassets in Resources */,
 				03D6C5C621AFEFD9007B0EE0 /* Capture.png in Resources */,
 				0306C56121B7C995000F27A4 /* MainWindowController.xib in Resources */,
@@ -258,12 +268,30 @@
 			name = MainWindowController.xib;
 			sourceTree = "<group>";
 		};
+		0367938A21B9451C0093A82F /* Predicate.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0367938921B9451C0093A82F /* en */,
+				0367938B21B9451E0093A82F /* fr */,
+			);
+			name = Predicate.strings;
+			sourceTree = "<group>";
+		};
+		0367939021B948B60093A82F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0367938F21B948B60093A82F /* en */,
+				0367939121B948B90093A82F /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		03D6C5A421AFEC15007B0EE0 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				03D6C5A521AFEC15007B0EE0 /* Base */,
 				0306C56021B7C4AF000F27A4 /* fr */,
-				0306C56921B7CAC7000F27A4 /* en */,
+				0306C56D21B8191D000F27A4 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
