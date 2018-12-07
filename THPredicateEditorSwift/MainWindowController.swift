@@ -19,7 +19,8 @@ final class MainWindowController: NSWindowController {
         
     @objc dynamic var arrayPerson = [Person]()
     
-    let DEFAULT_PREDICATE = "firstName ==[cd] 'John' OR lastName ==[cd] 'doe' OR (dateOfBirth <= CAST('11/18/2018 00:00', 'NSDate') AND dateOfBirth >= CAST('01/01/2018', 'NSDate')) OR department == 'Human Resources' OR country ==[cd] 'United States' OR age = 25"
+//    let DEFAULT_PREDICATE = "firstName ==[cd] 'John' OR lastName ==[cd] 'doe' OR (dateOfBirth <= CAST('11/18/2018 00:00', 'NSDate') AND dateOfBirth >= CAST('01/01/2018', 'NSDate')) OR Department == 'Human Resources' OR country ==[cd] 'United States' OR age = 25"
+    let DEFAULT_PREDICATE = "firstName ==[cd] 'John' OR lastName ==[cd] 'doe' OR (dateOfBirth <= CAST('11/18/2018 00:00', 'NSDate') AND dateOfBirth >= CAST('01/01/2018', 'NSDate')) OR country ==[cd] 'United States' OR age = 25"
 
     override var windowNibName: NSNib.Name? {
         return NSNib.Name( "MainWindowController")
@@ -63,8 +64,8 @@ final class MainWindowController: NSWindowController {
         let dateOfBirthTemplate = NSPredicateEditorRowTemplate(DateCompareForKeyPaths: ["dateOfBirth"] , operators: operators)
         
         // Custom
-        let leftExpressions = [NSExpression(forKeyPath: "Department")]
-        let departmentCustomRowTemplate = THDepartmentsRowTemplate(leftExpressions: leftExpressions)
+        //let leftExpressions = [NSExpression(forKeyPath: "Department")]
+        //let departmentCustomRowTemplate = THDepartmentsRowTemplate(leftExpressions: leftExpressions)
         
         // Constant values
         operators = [.equalTo, .notEqualTo]
@@ -82,7 +83,7 @@ final class MainWindowController: NSWindowController {
         predicateEditor.formattingDictionary = formattingDictionary
         
         // Feed predicateEditor
-        predicateEditor.rowTemplates = [compound, firstNameRowTemplate, lastNameRowTemplate, ageTemplate, dateOfBirthTemplate, countryTemplate, departmentCustomRowTemplate, boolTemplate]
+        predicateEditor.rowTemplates = [compound, firstNameRowTemplate, lastNameRowTemplate, ageTemplate, dateOfBirthTemplate, countryTemplate, boolTemplate]
         predicate = NSPredicate(format:DEFAULT_PREDICATE)
         predicateEditor.objectValue = predicate
     }

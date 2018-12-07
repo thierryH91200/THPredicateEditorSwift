@@ -45,5 +45,5 @@
 "%[dateOfBirth]@ %[is greater than]@ %@" = "%1$[dateOfBirth]@ %2$[est plus grand que]@ %3$@";
 "%[dateOfBirth]@ %[is greater than or equal to]@ %@" = "%1$[dateOfBirth]@ %2$[est plus grand ou égal à]@ %3$@";
 
-"%[Department]@ %[is]@ %[Human Resources]@" = "%1$[Department]@ %2$[est]@ %3$[Resources Humaines]@";
+//"%[Department]@ %[is]@ %[Human Resources]@" = "%1$[Department]@ %2$[est]@ %3$[Resources Humaines]@";
 //"%[department]@ %[is not]@ %[Human Resources]@" = "%1$[département]@ %2$[is not]@ %3$[Resources Humaines]@";
