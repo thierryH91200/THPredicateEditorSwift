@@ -14,12 +14,12 @@
 "%[None]@ of the following are true" = "%[Aucune]@ des conditions suivantes n'est vraie";
 
 "firstname" = "nom";
-"%[firstName]@ %[is]@ %@" = "%1$[nom]@ %2$[est]@ %3$@";
-"%[firstName]@ %[is not]@ %@" = "%1$[nom]@ %2$[n'est pas]@ %3$@";
+"%[firstName]@ %[is]@ %@" = "%1$[Nom]@ %2$[est]@ %3$@";
+"%[firstName]@ %[is not]@ %@" = "%1$[Nom]@ %2$[n'est pas]@ %3$@";
 
 "lastName" = "prenom";
-"%[lastName]@ %[is]@ %@" = "%1$[prenom]@ %2$[est]@ %3$@";
-"%[lastName]@ %[is not]@ %@" = "%1$[prenom]@ %2$[n'est pas]@ %3$@";
+"%[lastName]@ %[is]@ %@" = "%1$[Prenom]@ %2$[est]@ %3$@";
+"%[lastName]@ %[is not]@ %@" = "%1$[Prenom]@ %2$[n'est pas]@ %3$@";
 
 "country" = "Pays";
 "%[country]@ %[is]@ %[Mexico]@" = "%1$[Pays]@ %2$[est]@ %3$[Mexique]@";
@@ -32,18 +32,18 @@
 "%[country]@ %[is not]@ %[Brazil]@" = "%1$[Pays]@ %2$[n'est pas]@ %3$[Bresil]@";
 "%[country]@ %[is not]@ %[United States]@" = "%1$[Pays]@ %2$[n'est pas]@ %3$[Etats Unis]@";
 
-"%[age]@ %[is]@ %@" = "%1$[age]@ %2$[est égal à]@ %3$@";
-"%[age]@ %[is not]@ %@" = "%1$[age]@ %2$[n'est pas égal à]@ %3$@";
-"%[age]@ %[is less than]@ %@" = "%1$[age]@ %2$[est plus petit que]@ %3$@";
-"%[age]@ %[is less than or equal to]@ %@" = "%1$[age]@ %2$[est plus petit ou égal à]@ %3$@";
-"%[age]@ %[is greater than]@ %@" = "%1$[age]@ %2$[est plus grand que]@ %3$@";
-"%[age]@ %[is greater than or equal to]@ %@" = "%1$[age]@ %2$[est plus grand ou égal à]@ %3$@";
+"%[age]@ %[is]@ %@" = "%1$[Age]@ %2$[est égal à]@ %3$@";
+"%[age]@ %[is not]@ %@" = "%1$[Age]@ %2$[n'est pas égal à]@ %3$@";
+"%[age]@ %[is less than]@ %@" = "%1$[Age]@ %2$[est plus petit que]@ %3$@";
+"%[age]@ %[is less than or equal to]@ %@" = "%1$[Age]@ %2$[est plus petit ou égal à]@ %3$@";
+"%[age]@ %[is greater than]@ %@" = "%1$[Age]@ %2$[est plus grand que]@ %3$@";
+"%[age]@ %[is greater than or equal to]@ %@" = "%1$[Age]@ %2$[est plus grand ou égal à]@ %3$@";
 
-"%[dateOfBirth]@ %[is]@ %@" = "%1$[dateOfBirth]@ %2$[est]@ %3$@";
-"%[dateOfBirth]@ %[is less than]@ %@" = "%1$[dateOfBirth]@ %2$[est plus petite que]@ %3$@";
-"%[dateOfBirth]@ %[is less than or equal to]@ %@" = "%1$[dateOfBirth]@ %2$[est plus petit ou égal à]@ %3$@";
-"%[dateOfBirth]@ %[is greater than]@ %@" = "%1$[dateOfBirth]@ %2$[est plus grand que]@ %3$@";
-"%[dateOfBirth]@ %[is greater than or equal to]@ %@" = "%1$[dateOfBirth]@ %2$[est plus grand ou égal à]@ %3$@";
+"%[dateOfBirth]@ %[is]@ %@" = "%1$[Date de naissance]@ %2$[est]@ %3$@";
+"%[dateOfBirth]@ %[is less than]@ %@" = "%1$[Date de naissance]@ %2$[est plus petite que]@ %3$@";
+"%[dateOfBirth]@ %[is less than or equal to]@ %@" = "%1$[Date de naissance]@ %2$[est plus petit ou égal à]@ %3$@";
+"%[dateOfBirth]@ %[is greater than]@ %@" = "%1$[Date de naissance]@ %2$[est plus grand que]@ %3$@";
+"%[dateOfBirth]@ %[is greater than or equal to]@ %@" = "%1$[Date de naissance]@ %2$[est plus grand ou égal à]@ %3$@";
 
 //"%[Department]@ %[is]@ %[Human Resources]@" = "%1$[Department]@ %2$[est]@ %3$[Resources Humaines]@";
 //"%[department]@ %[is not]@ %[Human Resources]@" = "%1$[département]@ %2$[is not]@ %3$[Resources Humaines]@";

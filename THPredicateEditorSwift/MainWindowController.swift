@@ -76,7 +76,6 @@ final class MainWindowController: NSWindowController {
         operators = [.equalTo, .notEqualTo]
         let boolTemplate = NSPredicateEditorRowTemplate( BoolCompareForKeyPaths: ["isBool"], operators: operators )
         
-        
         let stringsFile = Bundle.main.path(forResource: "Predicate", ofType: "strings")
         let strings = try? String(contentsOfFile: stringsFile ?? "", encoding: .utf16)
         let formattingDictionary = strings?.propertyListFromStringsFileFormat()
@@ -90,7 +89,7 @@ final class MainWindowController: NSWindowController {
     
     @IBAction func generateQuery(_ sender: Any) {
         queryTextField.font = NSFont(name: "Helvetica", size: 18.0)
-        queryTextField.string = predicateEditor.predicate?.description ?? "vide"
+        queryTextField.string = predicateEditor.predicate?.description ?? ""
         print(#function)
         arrayController.filterPredicate = predicateEditor.predicate
     }
@@ -127,5 +126,17 @@ class Person : NSObject {
         self.isBool = isBool
         super.init()
     }
+    
+    private func emojiFlag(countryCode: String) -> String {
+        var string = ""
+        var country = countryCode.uppercased()
+        for uS in country.unicodeScalars {
+            if let scalar = UnicodeScalar(127_397 + uS.value) {
+                string.append(String(scalar))
+            }
+        }
+        return string
+    }
+
 }
 
