@@ -53,7 +53,7 @@ final class THDepartmentsRowTemplate: NSPredicateEditorRowTemplate {
     }
     
     @IBAction func validationAction(_ sender: Any) {
-        print(#function)
+        print( #function, #line)
     }
     
 }
