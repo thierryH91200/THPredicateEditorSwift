@@ -180,9 +180,11 @@
 				TargetAttributes = {
 					03D6C59C21AFEC12007B0EE0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					03D6C5AC21AFEC15007B0EE0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 03D6C59C21AFEC12007B0EE0;
 					};
 				};
@@ -434,7 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thierry24100.THPredicateEditorSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -452,7 +454,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thierry24100.THPredicateEditorSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -470,7 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thierry24100.THPredicateEditorSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = THPredicateEditorSwift;
 			};
 			name = Debug;
@@ -489,7 +491,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thierry24100.THPredicateEditorSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = THPredicateEditorSwift;
 			};
 			name = Release;
