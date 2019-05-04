@@ -20,7 +20,7 @@ final class MainWindowController: NSWindowController {
     @objc dynamic var arrayPerson = [Person]()
     
 //    let DEFAULT_PREDICATE = "firstName ==[cd] 'John' OR lastName ==[cd] 'doe' OR (dateOfBirth <= CAST('11/18/2018 00:00', 'NSDate') AND dateOfBirth >= CAST('01/01/2018', 'NSDate')) OR Department == 'Human Resources' OR country ==[cd] 'United States' OR age = 25"
-    let DEFAULT_PREDICATE = "firstName ==[cd] 'John' OR lastName ==[cd] 'doe' OR (dateOfBirth <= CAST('11/18/2018 00:00', 'NSDate') AND dateOfBirth >= CAST('01/01/2018', 'NSDate')) OR country ==[cd] 'United States' OR age = 25 OR Department == 'Human Resources'"
+    let DEFAULT_PREDICATE = "firstName ==[cd] 'John' OR lastName ==[cd] 'doe' OR (dateOfBirth <= CAST('11/18/2018 00:00', 'NSDate') AND dateOfBirth >= CAST('01/01/2018', 'NSDate')) OR country ==[cd] 'United States' OR age = 25"
 
     override var windowNibName: NSNib.Name? {
         return NSNib.Name( "MainWindowController")
@@ -52,8 +52,8 @@ final class MainWindowController: NSWindowController {
         
         // String
         operators = [.equalTo, .notEqualTo]
-        let firstNameRowTemplate = RowTemplateRelationshipAny(stringCompareForKeyPaths: ["firstName"] , operators: operators)
-        let lastNameRowTemplate = RowTemplateRelationshipAny(stringCompareForKeyPaths: ["lastName"] , operators: operators)
+        let firstNameRowTemplate = NSPredicateEditorRowTemplate(stringCompareForKeyPaths: ["firstName"] , operators: operators)
+        let lastNameRowTemplate = NSPredicateEditorRowTemplate(stringCompareForKeyPaths: ["lastName"] , operators: operators)
         
         // Int
         operators = [.equalTo, .notEqualTo, .greaterThan, .greaterThanOrEqualTo, .lessThan, .lessThanOrEqualTo]
@@ -64,8 +64,8 @@ final class MainWindowController: NSWindowController {
         let dateOfBirthTemplate = NSPredicateEditorRowTemplate(DateCompareForKeyPaths: ["dateOfBirth"] , operators: operators)
         
         // Custom
-        let leftExpressions = [NSExpression(forKeyPath: "Department")]
-        let departmentCustomRowTemplate = THDepartmentsRowTemplate(leftExpressions: leftExpressions)
+//        let leftExpressions = [NSExpression(forKeyPath: "Department")]
+//        let departmentCustomRowTemplate = THDepartmentsRowTemplate(leftExpressions: leftExpressions)
         
         // Constant values
         operators = [.equalTo, .notEqualTo]
@@ -76,15 +76,15 @@ final class MainWindowController: NSWindowController {
         operators = [.equalTo, .notEqualTo]
         let boolTemplate = NSPredicateEditorRowTemplate( BoolCompareForKeyPaths: ["isBool"], operators: operators )
         
+        // internationalize
         let stringsFile = Bundle.main.path(forResource: "Predicate", ofType: "strings")
         let strings = try? String(contentsOfFile: stringsFile ?? "", encoding: .utf16)
         let formattingDictionary = strings?.propertyListFromStringsFileFormat()
         predicateEditor.formattingDictionary = formattingDictionary
         
         // Feed predicateEditor
-        predicateEditor.rowTemplates = [compound, firstNameRowTemplate, lastNameRowTemplate, ageTemplate, dateOfBirthTemplate, countryTemplate, boolTemplate, departmentCustomRowTemplate]
+        predicateEditor.rowTemplates = [compound, firstNameRowTemplate, lastNameRowTemplate, ageTemplate, dateOfBirthTemplate, countryTemplate, boolTemplate]
         
-        let template = predicateEditor.rowTemplates
         predicate = NSPredicate(format:DEFAULT_PREDICATE)
         predicateEditor.objectValue = predicate
     }
@@ -93,17 +93,17 @@ final class MainWindowController: NSWindowController {
         queryTextField.font = NSFont(name: "Helvetica", size: 18.0)
         queryTextField.string = predicateEditor.predicate?.description ?? ""
         
-        print(queryTextField.string)
-        print(#function)
-//        arrayController.filterPredicate = predicateEditor.predicate
+//        print(queryTextField.string)
+//        print(#function)
+        arrayController.filterPredicate = predicateEditor.predicate
         
-        let numberOfRows = predicateEditor.numberOfRows
-        print(numberOfRows)
-        for i in 0..<numberOfRows {
-            let result = predicateEditor.predicate(forRow: i)
-            let str = result?.description ?? ""
-            print(str)
-        }
+//        let numberOfRows = predicateEditor.numberOfRows
+//        print(numberOfRows)
+//        for i in 0..<numberOfRows {
+//            let result = predicateEditor.predicate(forRow: i)
+//            let str = result?.description ?? ""
+//            print(str)
+//        }
     }
     
     @IBAction func predicateEditorAction(_ sender: Any) {
@@ -127,6 +127,7 @@ class Person : NSObject {
         lastName = "family"
         super.init()
     }
+    
     
     init(firstName:String, lastName:String, dateOfBirth : Date, age:Int, department : String, country : String, isBool: Bool) {
         self.firstName = firstName
