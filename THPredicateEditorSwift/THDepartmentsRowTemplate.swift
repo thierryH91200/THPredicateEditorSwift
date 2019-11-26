@@ -12,8 +12,13 @@ final class THDepartmentsRowTemplate: NSPredicateEditorRowTemplate {
     
     init(leftExpressions: [NSExpression]) {
         let operators = [ NSComparisonPredicate.Operator.equalTo.rawValue,  NSComparisonPredicate.Operator.notEqualTo.rawValue]
-        let departmentList = [NSExpression(forConstantValue: "Human Resources"), NSExpression(forConstantValue: "Finance"), NSExpression(forConstantValue: "Information Technology"), NSExpression(forConstantValue: "Sales")]
         
+        let departments = ["Human Resources","Finance", "Information Technology", "Sales"]
+        var departmentList = [NSExpression]()
+        for department in departments {
+            departmentList.append(NSExpression(forConstantValue: department))
+        }
+                
         super.init(leftExpressions: leftExpressions, rightExpressions: departmentList, modifier: .direct, operators: operators as [NSNumber], options: 0)
     }
     
