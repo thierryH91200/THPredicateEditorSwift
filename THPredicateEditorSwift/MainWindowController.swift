@@ -64,8 +64,8 @@ final class MainWindowController: NSWindowController {
         let dateOfBirthTemplate = NSPredicateEditorRowTemplate(DateCompareForKeyPaths: ["dateOfBirth"] , operators: operators)
         
         // Custom
-//        let leftExpressions = [NSExpression(forKeyPath: "Department")]
-//        let departmentCustomRowTemplate = THDepartmentsRowTemplate(leftExpressions: leftExpressions)
+        let leftExpressions = [NSExpression(forKeyPath: "Department")]
+        let departmentCustomRowTemplate = THDepartmentsRowTemplate(leftExpressions: leftExpressions)
         
         // Constant values
         operators = [.equalTo, .notEqualTo]
@@ -83,7 +83,7 @@ final class MainWindowController: NSWindowController {
         predicateEditor.formattingDictionary = formattingDictionary
         
         // Feed predicateEditor
-        predicateEditor.rowTemplates = [compound, firstNameRowTemplate, lastNameRowTemplate, ageTemplate, dateOfBirthTemplate, countryTemplate, boolTemplate]
+        predicateEditor.rowTemplates = [compound, firstNameRowTemplate, lastNameRowTemplate, ageTemplate, dateOfBirthTemplate, countryTemplate, boolTemplate, departmentCustomRowTemplate]
         
         predicate = NSPredicate(format:DEFAULT_PREDICATE)
         predicateEditor.objectValue = predicate
@@ -142,7 +142,7 @@ class Person : NSObject {
     
     private func emojiFlag(countryCode: String) -> String {
         var string = ""
-        var country = countryCode.uppercased()
+        let country = countryCode.uppercased()
         for uS in country.unicodeScalars {
             if let scalar = UnicodeScalar(127_397 + uS.value) {
                 string.append(String(scalar))

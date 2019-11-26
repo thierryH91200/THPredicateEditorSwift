@@ -112,7 +112,7 @@ class RowTemplateRelationshipAny: NSPredicateEditorRowTemplate {
     
     override func predicate(withSubpredicates subpredicates: [NSPredicate]?) -> NSPredicate{
         
-        let predicate: NSComparisonPredicate = super.predicate(withSubpredicates: subpredicates) as! NSComparisonPredicate
+        let predicate = super.predicate(withSubpredicates: subpredicates) as! NSComparisonPredicate
         let newPredicate = NSComparisonPredicate(leftExpression: predicate.leftExpression, rightExpression: predicate.rightExpression, modifier: .any, type: predicate.predicateOperatorType, options: predicate.options)
         
         print(#function)
@@ -126,14 +126,14 @@ class RowTemplateRelationshipAll: NSPredicateEditorRowTemplate {
     
     override func predicate(withSubpredicates subpredicates: [NSPredicate]?) -> NSPredicate{
         
-        let predicate: NSComparisonPredicate = super.predicate(withSubpredicates: subpredicates) as! NSComparisonPredicate
-        let p2 = NSPredicate(format: "SUBQUERY(sousOperations, $sousOperation, $sousOperation.category.rubrique.name == %@).@count > 0", predicate.rightExpression)
+        let predicate = super.predicate(withSubpredicates: subpredicates) as! NSComparisonPredicate
+        let newPredicate = NSPredicate(format: "SUBQUERY(sousOperations, $sousOperation, $sousOperation.category.rubrique.name == %@).@count > 0", predicate.rightExpression)
+//        let newPredicate = NSComparisonPredicate(leftExpression: predicate.leftExpression, rightExpression: predicate.rightExpression, modifier: .all, type: predicate.predicateOperatorType, options: predicate.options)
+
         print(predicate.rightExpression.description)
         print(predicate.leftExpression.description)
 
-//        let newPredicate = NSComparisonPredicate(leftExpression: predicate.leftExpression, rightExpression: predicate.rightExpression, modifier: .all, type: predicate.predicateOperatorType, options: predicate.options)
-        
-        return p2
+        return newPredicate
     }
     
 }
@@ -163,6 +163,8 @@ public extension NSPredicate{
         case .not: return "!"
         case .and: return "&&"
         case .or: return "||"
+        @unknown default:
+            fatalError()
         }
     }
 }
