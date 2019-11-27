@@ -128,7 +128,6 @@ class RowTemplateRelationshipAll: NSPredicateEditorRowTemplate {
         
         let predicate = super.predicate(withSubpredicates: subpredicates) as! NSComparisonPredicate
         let newPredicate = NSPredicate(format: "SUBQUERY(sousOperations, $sousOperation, $sousOperation.category.rubrique.name == %@).@count > 0", predicate.rightExpression)
-//        let newPredicate = NSComparisonPredicate(leftExpression: predicate.leftExpression, rightExpression: predicate.rightExpression, modifier: .all, type: predicate.predicateOperatorType, options: predicate.options)
 
         print(predicate.rightExpression.description)
         print(predicate.leftExpression.description)
